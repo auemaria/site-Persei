@@ -1,0 +1,57 @@
+.container1{
+    width: 300px;
+    height: 600px;
+    box-shadow: 0 0 100px 10px;
+    position: relative; /* относительное позиционировкание, все абсолютные контейнеры будут ровняться по этому контейнеру, а не по экрану */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease;
+    z-index: 126456174322352562;
+    top: 720px;
+}
+.cross-container{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.cross-one{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.cross-two{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+.container-image img{
+    width: 250px;
+    height: 450px;
+}
+.popup-transform{
+    transform: translateY(-100vh);
+    transition: transform 0.5s ease;
+}
+.layer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(117, 190, 218, 0);
+    z-index: 26154215487253769249;
+    top: 0;
+    left: 0;
+
+    transition: opacity 0.5s ease; 
+}
